@@ -58,22 +58,32 @@ ul.nav a:hover{
 	background-attachment: fixed;
 
 }
+#header-main{
+	width: 100%;
+	height: 95%;
+}
 
 #about-container{
-	background-color: red;
 	height: 100%;
+	background-image: url("../assets/img/about.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	
 }
 #portfolio-container{
-	background-color: yellow;
 	height: 100%;
+	background-image: url("../assets/img/portfolio.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 
 }
 #contact-container{
-	background-color: blue;
 	height: 70%;
+	background-image: url("../assets/img/contact.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 #footer-container{
