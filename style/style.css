@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	text-decoration: none;
+	margin-top: 0px;
+
+}
+a{
+	text-decoration: none;
+	color: #CED6D5 ;
+	background-color: transparent ;
+}
+a:hover{
+		color: #abe234;
+}
+html, body{
+	height: 100%;
+}
+.navbar .navbar-nav {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16pt;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+ul.nav a{
+	text-decoration: none;
+	color: #CED6D5 !important;
+	background-color: transparent !important;
+
+}
+
+ul.nav a:hover{
+	color: #abe234 !important;
+	border-width: 0px;
+	border-style: solid;
+	background-color: transparent;
+	font-size: 17pt;
+
+}
+.navbar-inner{
+	background-color: transparent;
+}
+
+.fix-to-top {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 50px;
+}
+#header-container{
+	height: 100%;
+	width: 100%;
+	background-image: url("../assets/img/banner.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#about-container{
+	background-color: red;
+	height: 100%;
+	background-attachment: fixed;
+	
+}
+#portfolio-container{
+	background-color: yellow;
+	height: 100%;
+	background-attachment: fixed;
+
+}
+#contact-container{
+	background-color: blue;
+	height: 70%;
+	background-attachment: fixed;
+}
+#footer-container{
+	height: 30%;
+	background-color: black;
+	background-attachment: fixed;
+}
+
+.social-media {
+	text-align: center;
+}
