@@ -62,6 +62,21 @@ portfolioApp.directive('scrollTo', function() {
     }
 });
 
+portfolioApp.directive('myScroller', function($window){
+  var $win = angular.element($window);
+    return {
+
+        restrict: 'A',
+        link: function(scope,element,attrs){
+            $win.on('scroll', function(evt){
+               console.log(evt.offsetX + ':' + evt.offsetY);
+            });
+        }
+
+    }
+
+});
+
 //controllers
 portfolioApp.controller('mainController', ['$scope','sharedService', function($scope, sharedService){
 	

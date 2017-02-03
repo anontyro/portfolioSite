@@ -25,13 +25,21 @@ html, body{
 
 ul.nav a{
 	text-decoration: none;
-	color: #CED6D5 !important;
+	color: #CED6D5 ;
 	background-color: transparent !important;
 
 }
 
 ul.nav a:hover{
 	color: #abe234 !important;
+	border-width: 0px;
+	border-style: solid;
+	background-color: transparent;
+	font-size: 17pt;
+
+}
+.link-active{
+	color: red !important;
 	border-width: 0px;
 	border-style: solid;
 	background-color: transparent;
