@@ -6,7 +6,6 @@
 }
 a{
 	text-decoration: none;
-	color: #CED6D5 ;
 	background-color: transparent ;
 }
 a:hover{
@@ -22,11 +21,16 @@ html, body{
 	vertical-align: top;
 
 }
+.navbar-default{
+	background-color: transparent;
+	color: #777 !important;
+	border: 0px;
+}
 
 ul.nav a{
 	text-decoration: none;
-	color: #CED6D5 ;
 	background-color: transparent !important;
+	color: #D4C6C6 !important;
 
 }
 
@@ -38,6 +42,7 @@ ul.nav a:hover{
 	font-size: 17pt;
 
 }
+
 .link-active{
 	color: red !important;
 	border-width: 0px;
@@ -67,8 +72,45 @@ ul.nav a:hover{
 
 }
 #header-main{
+	margin-top: 0px !important;
+	padding-top: 100px;
+	padding-left: 50px;
 	width: 100%;
-	height: 95%;
+	height: 90%;
+
+}
+#header-main h1{
+	color: white;	
+	font-family: 'Alegreya', serif;
+	font-size: 75px;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+#header-main h3{
+	color: white;
+	   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#container-background{
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	height: 80%;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 25px;
+	border-radius: 5px;
 }
 
 #about-container{
@@ -77,6 +119,7 @@ ul.nav a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow: auto;
 	
 }
 #portfolio-container{
@@ -85,6 +128,16 @@ ul.nav a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow: auto;
+
+}
+#blog-container{
+	height: 100%;
+	background-image: url("../assets/img/blog.jpg" );
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: auto;
 
 }
 #contact-container{
@@ -93,11 +146,27 @@ ul.nav a:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow: auto;
 }
 #footer-container{
 	height: 30%;
 	background-color: black;
 	background-attachment: fixed;
+	overflow: auto;
+	padding-top: 50px;
+}
+
+#footer-container a{
+	color: white;
+}
+
+#footer-container a:hover{
+	color: #abe234 !important;
+	border-width: 0px;
+	border-style: solid;
+	background-color: transparent;
+	font-size: 12pt;
+
 }
 
 .social-media {
