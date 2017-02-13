@@ -2,6 +2,8 @@
 
 $app = new \Slim\App();
 
+$blogTable = "myblog";
+
 $app ->get('/blog', function(){
 	print("Blog root for API");
 });
@@ -30,8 +32,8 @@ $app->get('/blog/list/{number}', function($request){
 
 	require_once('dbconnect.php');
 
-	$id = $request->getAttribute('number');
-	$query = "select * from salesdata where id=$id";
+	$num = $request->getAttribute('number');
+	$query = "SELECT * FROM $blogTable WHERE draft=0 ORDER BY published DESC LIMIT $num";
 	$result = $mysqli->query($query);
 
 	$output[] = $result->fetch_assoc();
